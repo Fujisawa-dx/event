@@ -1,6 +1,6 @@
 function next (idname){
     document.getElementById(idname).style.display = "block";
-    scrollTo(0,100)
+    scrollBy(0,100)
 }
 
 function procVisible(){
