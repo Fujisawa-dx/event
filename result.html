@@ -5,150 +5,499 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:rgb(252 248 236);
+        }
+        img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                padding: 15px;
+                }
+    </style>
     <title>Document</title>
 </head>
-<body>
-    <h1 class="visually-hidden">Headers examples</h1>
-
-    <div class="">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">イベント開催ナビゲーション</span>
-        </a> 
+<body class="bg-light.bg-gradient" style="font-family: 'BIZ UDPGothic', 'sans-serif';">
+    <div class="bg-white">
+        <header class="d-flex align-items-center row border-bottom">
+          <div class="col-auto">
+            <img src="flag.png" class="ml-3" style="width:60px; height: auto;"/>
+          </div>
+          <div class="col">
+            <p class="my-0">藤沢市イベント開催ナビ</p>
+          </div>
         </header>
-    </div> 
-    <p>必要なお手続きは以下のとおりです。</p>
-    <p>本ページをブックマークしておけば、再度同様の情報を表示できます。</p>  
-    <div id="procedure">
-        <div id="eventProcedure" style="display: none;" >
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    行事開催届
-                  </button>
-                </h2>
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>生活衛生課</p>
-                    <h3>手続き概要</h3>
-                    <p>イベント開催で飲食物の販売又は調理が行わる場合に必要です。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>
-            </div>
-            
-        </div>
+      </div>
+    
+    
 
-        <div id="fireProcedure" style="display: none;" >
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    火器使用届
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>査察指導課</p>
-                    <h3>手続き概要</h3>
-                    <p>イベント開催で飲食物の販売又は調理が行わる場合に必要です。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>
-            </div>
-        </div>
+    <div style="width: 400px">
+    <p class="m-2">あなたのイベントに必要な手続は以下のとおりです。ご確認いただきましたら、<a href="/" target="_blank">こちら</a>から市の担当部門と事前協議が可能です。</p>
+    
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="cheer" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">後援名義使用許可申請</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>市の後援を希望される場合に必要な手続です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>イベントに関連のある藤沢市の担当課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>開催日の<span class="text-danger">１か月前</span>まででなるべく早めにお手続きください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（各担当部門）</li>
+                <li>郵送</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>団体規約・定款など主催者の詳細のわかる書類</li>
+                <li>行事の詳細がわかる書類（計画書・企画書など）</li>
+                <li>収支予算書</li>
+                <li>イベントのポスターやチラシの案</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
+    
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="food" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">行事の開催届</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>臨時的な行事における食品の提供・販売時に、飲食を原因とした危害の発生を防止するために必要な手続です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>生活衛生課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>開催日の概ね<span class="text-danger">７日前</span>まででなるべく早めにお手続きください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市保健所２階）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>出店者の一覧（出店概要書）</li>
+                <li>会場平面図</li>
+                <li>付近の見取り図（案内図）</li>
+                <li>行事の詳細がわかる書類（計画書・企画書など）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
 
-        <div id="dorosenyo" style="display: none;" class="border border-primary">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    道路占用許可申請
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>道路管理課</p>
-                    <h3>手続き概要</h3>
-                    <p>イベント開催で飲食物の販売又は調理が行わる場合に必要です。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>
-        </div>
-        </div>
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="fire" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">露店等開設届</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>火を使用する器具等を使用する露店等を開設する場合に必要な届出です。※近親者によるバーベキューなど、相互に認識がある者が参加する催しは届出の対象外です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>査察指導課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>開催日の14日前(100店舗を超える場合)</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市防災センター１階、南消防署管理課、北消防署管理課）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>会場平面図（消火器設置場所も記載すること）</li>
+                <li>付近の見取り図（案内図）</li>
+                <li>火災予防計画書（１００店舗を超える場合）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
 
-        <div id="parksenyo" style="display: none;" class="border border-primary">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    公園使用許可申請
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>公園課</p>
-                    <h3>手続き概要</h3>
-                    <p>イベント開催で飲食物の販売又は調理が行わる場合に必要です。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>
-        </div>
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="fire-event" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">催物開催届</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>劇場等以外の建築物や工作物で演劇、映画その他の催物を開催しようとする場合に必要な届出です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>査察指導課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>届出上の期限はありませんが、開催日の概ね<span class="text-danger">１４日前</span>まででなるべく早めにお手続きください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市防災センター１階、南消防署管理課、北消防署管理課）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>行事の詳細がわかる書類（計画書・企画書など）</li>
+                <li>会場平面図（消火器設置場所も記載すること）</li>
+                <li>付近の見取り図（案内図）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
 
-        </div>
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="fire-miss" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">煙・火炎発生届出書</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>煙や火災と間違われる行為をあらかじめ消防署が把握するために必要な届出です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>査察指導課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>届出上の期限はありませんが、開催日の概ね<span class="text-danger">１４日前</span>まででなるべく早めにお手続きください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市防災センター１階、南消防署管理課、北消防署管理課）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>会場平面図（消火器設置場所も記載すること）</li>
+                <li>付近の見取り図（案内図）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
 
-        <div id="koukyosiyo" style="display: none;" class="border border-primary">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    申請
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>管財課</p>
-                    <h3>手続き概要</h3>
-                    <p>イベント開催で飲食物の販売又は調理が行わる場合に必要です。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>
-        </div>
-        </div>
-        
-        <div id="cheering" style="display: none;" class="border border-primary">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button">
-                    後援名義使用許可申請
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <h3>所管課</h3>
-                    <p>イベントに関連のある課</p>
-                    <h3>手続き概要</h3>
-                    <p>特定の企業や宗教、政治団体の利益を目的とする場合には許可できません。</p>
-                    <h3>詳細URL</h3>
-                    <a href="">aa</a>
-                    <h3>連絡先</h3>
-                  </div>
-                </div>     
-            </div>
-        </div>
-    </div>
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="fire-works" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">煙火打上・仕掛届出書</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>煙火の打ち上げ又は仕掛け等の行為をあらかじめ消防署が把握するために必要な届出です。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>査察指導課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>開催日の概ね<span class="text-danger">１４日前</span>まででなるべく早めにお手続きください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市防災センター１階、南消防署管理課、北消防署管理課）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>会場平面図</li>
+                <li>付近の見取り図（案内図）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>ありません</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="place3" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">公園内行為許可申請・公園占用申請</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>
+                <li>公園内行為許可申請：公園内で禁止又は制限されている行為を行う場合に必要な手続です。</li>
+                <li>公園占用申請：公園に工作物損とあの物件または施設を設けて占用する場合に必要な手続です。</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>公園課</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>
+                <li>公園占用申請：イベント開催日から起算して土日祝祭日をのぞいた20日前まで</li>
+                <li>公園内行為許可申請：イベント開催日から起算して土日祝祭日をのぞいた７日前まで</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>訪問（藤沢市分庁舎６階）</li>
+                <li>郵送</li>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>行事の詳細がわかる書類（計画書・企画書など）</li>
+                <li>出店者の一覧</li>
+                <li>会場平面図</li>
+                <li>占用物件の構造図</li>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>必要です。行為の内容や占用物件の大きさ等により算出します。詳しくはお問い合わせ下さい。</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2"><a href="/" target="_blank" class="text-center">手続の詳細はこちら</a></td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="place1" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">道路使用許可申請・道路占用許可申請</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>
+                <li>道路使用許可申請：道路を交通以外の目的で利用する場合に必要な手続です。</li>
+                <li>道路占用許可申請：道路（歩道を含む）の一部をイベントのステージや店舗等で占用する場合に必要な手続です。</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>
+                <li>道路使用許可申請：神奈川県警</li>
+                <li>道路占用許可申請：国道は国土交通省、県道は神奈川県庁、藤沢市道は藤沢市道路管理課</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>
+                <li>藤沢市への申請：イベント開催日の14日前まで</li>
+                <li>その他の申請：詳しくは各HPをご確認ください</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <p>藤沢市への申請</p>
+                <li>訪問（藤沢市分庁舎４階）</li>
+                <li>郵送</li>
+                <li>電子申請</li>
+                <p>その他の申請は各HPをご確認ください</p>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                <li>会場平面図</li>
+                <li>付近の見取り図（案内図）</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>必要です。詳しくは各HPをご確認ください。</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2">
+                <li><a href="/" target="_blank" class="text-center">藤沢市の手続の詳細はこちら</a></li>
+                <li><a href="/" target="_blank" class="text-center">神奈川県警の手続の詳細はこちら</a></li>
+                <li><a href="/" target="_blank" class="text-center">国土交通省の手続の詳細はこちら</a></li>
+                <li><a href="/" target="_blank" class="text-center">神奈川県庁の手続の詳細はこちら</a></li>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="place2" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">藤沢駅前広場利用申請</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>
+                藤沢駅前広場の利用に必要な申請です。
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>
+                一般社団法人藤沢駅周辺地区エリアマネジメント
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>
+                イベント開催日の20日前まで
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>電子申請</li>
+                <li>郵送</li>
+                <li>FAX</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                詳しくはHPをご確認ください。
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>必要です。詳しくはHPをご確認ください。</td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2">
+                <a href="/" target="_blank" class="text-center">手続の詳細はこちら</a>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    <table class="table bg-light m-3 shadow-sm table-rounded" id="place5" style="display: none;">
+        <tbody>
+            <tr>
+                <td align="center" colspan="2"><h4 class="text-primary text-center">公共施設使用申請</h4></td>
+            </tr>
+          <tr>
+            <th scope="row" class="text-secondary">概要</th>
+            <td>
+                公共施設の利用に必要な申請です。
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出先</th>
+            <td>
+                各施設管理者へお問い合わせください。
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続期限</th>
+            <td>各施設管理者へお問い合わせください。</td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">提出<BR>方法</th>
+            <td>
+                <li>電子申請</li>
+                <li>郵送</li>
+                <li>FAX</li>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">必要<BR>書類</th>
+            <td>
+                各施設管理者へお問い合わせください。
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-secondary">手続にかかるお金</th>
+            <td>各施設管理者へお問い合わせください。</td>
+          </tr>
+          <tr>
+        </tbody>
+    </table>   
+</div>
+
+       
     <script src="result.js"></script>
 </body>
 </html>
