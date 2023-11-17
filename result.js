@@ -25,11 +25,11 @@ if (pflag.charAt(pflag.length -6) ==2){
     document.getElementById("place1").style.display = "block";
 }else{};
 
-if (pflag.charAt(pflag.length -7) ==2){
+if (pflag.charAt(pflag.length -8) ==2){
     document.getElementById("place2").style.display = "block";
 }else{};
 
-if (pflag.charAt(pflag.length -8) ==2){
+if (pflag.charAt(pflag.length -9) ==2){
     document.getElementById("place3").style.display = "block";
 }else{};
 
